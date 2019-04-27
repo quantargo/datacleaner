@@ -9,3 +9,7 @@ Description: Some lengthy description which somebody should write
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
+Suggests: 
+    testthat,
+    covr,
+    rmarkdown

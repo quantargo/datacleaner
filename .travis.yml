@@ -3,11 +3,6 @@
 language: R
 cache: packages
 
-r_packages:
-  - testthat
-  - covr
-  - rmarkdown
-
 #before_install:
 #  - Rscript -e 'update.packages(ask = FALSE)'
 
