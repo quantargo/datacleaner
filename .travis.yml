@@ -1,0 +1,15 @@
+# R for travis: see documentation at https://docs.travis-ci.com/user/languages/r
+
+language: R
+cache: packages
+
+r_packages:
+  - testthat
+  - covr
+  - rmarkdown
+
+before_install:
+  - Rscript -e 'update.packages(ask = FALSE)'
+
+after_success:
+  - Rscript -e 'covr::codecov()'
