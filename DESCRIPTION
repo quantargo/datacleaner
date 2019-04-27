@@ -13,3 +13,4 @@ Suggests:
     testthat,
     covr,
     rmarkdown
+RoxygenNote: 6.1.1
