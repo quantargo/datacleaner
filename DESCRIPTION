@@ -4,6 +4,7 @@ Title: Data Cleaning - what else?
 Version: 0.1.0
 Author: Quantargo Instructor
 Maintainer: Quantargo Instructor <courses@quantargo.com>
+Imports: stats
 Description: Some lengthy description which somebody should write
     Sometime.
 License: GPL-3
