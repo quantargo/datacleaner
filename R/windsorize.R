@@ -7,7 +7,7 @@ windsorize <- function(x, p = .90) {
   if( sum(is.na(x))){
     stop("Input x contains value NA")
   }
-  else if( is.null(x) ){
+  else if( length(x) ){
     stop("Input x is NULL")
   }
   
