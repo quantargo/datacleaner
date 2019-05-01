@@ -6,6 +6,17 @@
 \usage{
 windsorize(x, p = 0.9)
 }
+\arguments{
+\item{x}{A vector.}
+
+\item{p}{A quantile.}
+}
 \description{
-Do some windsorization.
+Winsorizing or winsorization is the transformation of statistics by limiting
+extreme values in the statistical data to reduce the effect of possibly
+spurious outliers.
+}
+\examples{
+windsorize(rnorm(5))
+
 }
