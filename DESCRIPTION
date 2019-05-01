@@ -11,6 +11,5 @@ Encoding: UTF-8
 LazyData: true
 Suggests: 
     testthat,
-    covr,
     rmarkdown
 RoxygenNote: 6.1.1

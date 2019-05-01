@@ -6,6 +6,9 @@
 \usage{
 meanimpute(x)
 }
+\arguments{
+\item{x}{A numeric vector}
+}
 \description{
-Meanimputation
+Removes NA-s with the mean value for the vector \code{x}
 }
