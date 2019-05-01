@@ -6,6 +6,15 @@
 \usage{
 windsorize(x, p = 0.9)
 }
+\arguments{
+\item{x}{A numerical vector.}
+
+\item{p}{Quantile value for outliers removal.}
+}
 \description{
-Do some windsorization.
+Replacing values of vector \code{x} greater or smaller then \code{q} quantile values.
+}
+\examples{
+ 
+windsorize(c(1,499,500,501))
 }
