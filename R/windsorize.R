@@ -1,12 +1,11 @@
 #' Windsorize
 #'
-#' 
 #' Replacing values of vector \code{x} greater or smaller then \code{q} quantile values.
 #' 
 #' @param x A numerical vector.
 #' @param p Quantile value for outliers removal.
 #' 
-#' @example 
+#' @examples  
 #' windsorize(c(1,499,500,501))
 #' @export
 #' 
