@@ -16,8 +16,13 @@ windsorize <- function(x, p = .90) {
   if (all(is.na(x))) {
     stop("argument should not be a vector containing only NA")
   }
-  q <- quantile(x, p)
-  x[x >= q] <- q
+  if (p < 0 || p > 1) {
+    stop("p invalid percentale. Expected values from 0 to 1")
+  }
+  q_lower <- quantile(x, (1-p)/2)
+  q_upper <- quantile(x, 1 - (1-p)/2)
+  x[x <= q_lower] <- q_lower
+  x[x >= q_upper] <- q_upper
   x
 }
 
