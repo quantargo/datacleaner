@@ -21,5 +21,5 @@ to the 5th percentile,
 and data above the 95th percentile set to the 95th percentile.
 }
 \examples{
-windsorize(c(92, 19, 101, 58, 101, 91, 26, 78, 10, 13, −5, 101, 86, −5))
+windsorize(c(3,4,4,3,4,5,1))
 }

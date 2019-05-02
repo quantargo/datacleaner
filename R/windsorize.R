@@ -9,9 +9,13 @@
 #' @param p A quantile.
 #' @return dataset with trimmed outliers with 10% percentile
 #' @examples
-#' windsorize(c(92, 19, 101, 58, 101, 91, 26, 78, 10, 13, −5, 101, 86, −5))
+#' windsorize(c(3,4,4,3,4,5,1))
 #' @export
 windsorize <- function(x, p = .90) {
+  if (length(x) == 0) stop("argument should not be a empty vector")
+  if (is.na(x)) {
+    stop("argument should not be a vector containing NA")
+  }
   q <- quantile(x, p)
   x[x >= q] <- q
   x
