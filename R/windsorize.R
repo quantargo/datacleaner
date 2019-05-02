@@ -16,6 +16,8 @@ windsorize <- function(x, p = .90) {
   if (all(is.na(x))) {
     stop("argument should not be a vector containing only NA")
   }
+  if (!is.numeric(x)) stop("argument should be a numeric vector")
+  if (!is.numeric(p)) stop("argument should be a number from 0 to 1")
   if (p < 0 || p > 1) {
     stop("p invalid percentale. Expected values from 0 to 1")
   }
