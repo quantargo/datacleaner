@@ -13,8 +13,8 @@
 #' @export
 windsorize <- function(x, p = .90) {
   if (length(x) == 0) stop("argument should not be a empty vector")
-  if (is.na(x)) {
-    stop("argument should not be a vector containing NA")
+  if (all(is.na(x))) {
+    stop("argument should not be a vector containing only NA")
   }
   q <- quantile(x, p)
   x[x >= q] <- q
