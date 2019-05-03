@@ -6,6 +6,9 @@
 \usage{
 meanimpute(x)
 }
+\arguments{
+\item{x}{A vector}
+}
 \description{
 Meanimputation
 }
