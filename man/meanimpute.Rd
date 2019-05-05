@@ -6,6 +6,15 @@
 \usage{
 meanimpute(x)
 }
+\arguments{
+\item{x}{A numeric vector containing the data}
+}
+\value{
+the input vector with its NA values replaced by the mean
+}
 \description{
 Meanimputation
+}
+\examples{
+log(1:5)
 }

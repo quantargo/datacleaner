@@ -2,10 +2,21 @@
 % Please edit documentation in R/windsorize.R
 \name{windsorize}
 \alias{windsorize}
-\title{Windsorize}
+\title{Windsorizes data.}
 \usage{
 windsorize(x, p = 0.9)
 }
+\arguments{
+\item{x}{A numeric vector containing the data.}
+
+\item{p}{A numeric value denoting the a probability}
+}
+\value{
+A numeric vector containing the windsorized data, i.e. extreme values are replaced by the quantiles derived from \code{p}.
+}
 \description{
-Do some windsorization.
+Windsorizes data.
+}
+\examples{
+windsorize(c(92 , 19 , 101 , 58 , 1053 , 91 , 26 , 78 , 10 , 13 , -40 , 101 , 86 , 85 , 15 , 89 , 89 , 28 , -5 , 41))
 }
