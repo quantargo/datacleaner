@@ -6,6 +6,22 @@
 \usage{
 windsorize(x, p = 0.9)
 }
+\arguments{
+\item{x}{a numeric vector}
+
+\item{p}{quantile}
+}
+\value{
+Windsorized  vector \code{x}
+}
 \description{
-Do some windsorization.
+Its purposes is to eliminate outliers in a following way. Values of (0.5 +- p/2)th quantiles are calculated and all
+values above(below) those quantiles are replaced by the quantiles.
+}
+\examples{
+example_vector=c(-1000,1,2,3,4,5,6,7,8,9,1000)
+windsorize(example_vector, 0.9)
+
+example_vector=rnorm(100)
+windsorize(example_vector, 0.9)
 }

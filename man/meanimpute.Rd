@@ -2,10 +2,20 @@
 % Please edit documentation in R/meanimpute.R
 \name{meanimpute}
 \alias{meanimpute}
-\title{Meanimputation}
+\title{Meanimpute}
 \usage{
 meanimpute(x)
 }
+\arguments{
+\item{x}{a numeric vector}
+}
+\value{
+new vector, where NA's are replace by mean \code{x}
+}
 \description{
-Meanimputation
+Replace NA's with mean value
+}
+\examples{
+example_vector=c(1,5,NA,NA)
+meanimpute(example_vector)
 }
