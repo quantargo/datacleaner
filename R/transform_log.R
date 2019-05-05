@@ -1,0 +1,1 @@
+transform_log<-function(x) log(x)
