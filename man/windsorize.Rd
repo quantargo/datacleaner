@@ -6,6 +6,19 @@
 \usage{
 windsorize(x, p = 0.9)
 }
+\arguments{
+\item{x}{A vector.}
+
+\item{p}{A quantile.}
+}
+\value{
+inuput vector x with trimmed outliers by (1-p) percentile.
+}
 \description{
-Do some windsorization.
+Transform all outliner data to
+(1-p)/2 percentile value for lower outliers and 
+(1+p)/2 for higher outliers.
+}
+\examples{
+windsorize(rnorm(100,0,1))
 }
